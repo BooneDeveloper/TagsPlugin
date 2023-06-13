@@ -1,0 +1,16 @@
+name: TagsPlugin
+version: 1.0.0
+main: BooneDev\TagsPlugin
+api: 5.0.0
+
+commands:
+  tag:
+    description: Gestiona las etiquetas de los jugadores
+    usage: /tag <create|list|delete|set|remove> [nombre]
+    permission: tagsplugin.admin
+    aliases: [tags]
+
+permissions:
+  tagsplugin.admin:
+    description: Permite administrar las etiquetas
+    default: op
